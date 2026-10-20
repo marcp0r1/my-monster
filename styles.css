@@ -1,0 +1,155 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  min-height: 100%;
+}
+
+body {
+  min-height: 100vh;
+  min-height: 100dvh;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+p {
+  color: rgb(241, 3, 3);
+}
+
+.parrafo {
+  color: black;
+}
+
+#titulo {
+  font-family: "Courier New", Courier, monospace;
+  text-align: center;
+}
+
+header,
+main {
+  border: 1px solid black;
+  margin: 20px;
+  padding: 20px;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 16px;
+}
+
+main {
+  flex: 1;
+  min-width: 0;
+}
+
+#footer {
+  background-color: rgb(7, 7, 7);
+  border: 1px solid red;
+  border-radius: 0;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 20px;
+}
+
+.Copyright {
+  margin: 0;
+}
+
+li {
+  list-style: none;
+}
+
+ul {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  padding: 0;
+  margin: 0;
+}
+
+nav {
+  border: 1px solid red;
+  display: flex;
+  align-items: center;
+}
+
+.img_logo {
+  height: 50px;
+  width: auto;
+  border: 1px solid red;
+}
+
+.ver_mas_button {
+  background-color: rgb(17, 17, 225);
+  color: white;
+  height: 20px;
+  border: 1px solid red;
+  border-radius: 10px;
+}
+
+.carrito {
+  color: black;
+}
+
+.contenedor_carrito {
+  background-color: rgb(64, 0, 255);
+  padding: 10px;
+  position: relative;
+}
+
+.Globito {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: -10px;
+  right: -10px;
+  margin: 0;
+}
+
+@media (max-width: 600px) {
+  header {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  nav ul {
+    justify-content: center;
+  }
+
+  header,
+  main {
+    margin: 12px;
+    padding: 16px;
+  }
+}
+/* Media Queries*/
+@media (width <=570px) {
+  ul{
+    flex-direction: column;
+  }
+.contenedor_carrito {
+  background-color: blueviolet;
+}
+.ver_mas_button{
+  display: none;
+
+}
+}
+@media (width<=768px) {
+  .Globito{
+    background-color: aqua;
+  }
+}
